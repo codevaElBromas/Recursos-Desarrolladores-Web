@@ -1,0 +1,35 @@
+/** {
+    background-color: #fff; 
+}*/
+ /*test*/
+
+ body {
+    background-color: #fff;
+ }
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    max-width: 600px;
+    width: 100%;
+}
+
+[class^="clase"]{
+    width: 100px;
+    height: 100px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+[class^="clase"]:hover{
+    background-color: #ff5314;
+    box-shadow: 0 8px 15px rgba(255, 197, 5, 0.445);
+}
